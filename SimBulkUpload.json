@@ -1,0 +1,54 @@
+[
+    {
+        "name": "testSim",
+        "properties": {
+            "authenticationKey": "11111112222222222222233333333333",
+            "deviceType": "Video camera",
+            "integratedCircuitCardIdentifier": "8900000000000000000",
+            "internationalMobileSubscriberIdentity": "11222",
+            "operatorKeyCode": "A0BBBBBBB000000010000000000CCCCC",
+            "simPolicy": {
+                "id": "/subscriptions/subid/resourceGroups/rg1/providers/Microsoft.MobileNetwork/mobileNetworks/testMobileNetwork/simPolicies/MySimPolicy"
+            },
+            "staticIpConfiguration": [
+                {
+                    "attachedDataNetwork": {
+                        "id": "/subscriptions/subid/resourceGroups/rg1/providers/Microsoft.MobileNetwork/packetCoreControlPlanes/TestPacketCoreCP/packetCoreDataPlanes/TestPacketCoreDP/attachedDataNetworks/TestAttachedDataNetwork"
+                    },
+                    "slice": {
+                        "id": "/subscriptions/subid/resourceGroups/rg1/providers/Microsoft.MobileNetwork/mobileNetworks/testMobileNetwork/slices/testSlice"
+                    },
+                    "staticIp": {
+                        "ipv4Address": "2.4.0.1"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "testSim2",
+        "properties": {
+            "authenticationKey": "AAAABBCCCCCCDDDDDDEEEEEEEEFFFFFF",
+            "deviceType": "Video camera",
+            "integratedCircuitCardIdentifier": "8900000000000000001",
+            "internationalMobileSubscriberIdentity": "33444",
+            "operatorKeyCode": "10203040506070809000A0B0C0D0E0F0",
+            "simPolicy": {
+                "id": "/subscriptions/subid/resourceGroups/rg1/providers/Microsoft.MobileNetwork/mobileNetworks/testMobileNetwork/simPolicies/MySimPolicy"
+            },
+            "staticIpConfiguration": [
+                {
+                    "attachedDataNetwork": {
+                        "id": "/subscriptions/subid/resourceGroups/rg1/providers/Microsoft.MobileNetwork/packetCoreControlPlanes/TestPacketCoreCP/packetCoreDataPlanes/TestPacketCoreDP/attachedDataNetworks/TestAttachedDataNetwork"
+                    },
+                    "slice": {
+                        "id": "/subscriptions/subid/resourceGroups/rg1/providers/Microsoft.MobileNetwork/mobileNetworks/testMobileNetwork/slices/testSlice"
+                    },
+                    "staticIp": {
+                        "ipv4Address": "2.4.0.2"
+                    }
+                }
+            ]
+        }
+    }
+]
