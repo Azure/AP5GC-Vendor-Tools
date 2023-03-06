@@ -1,7 +1,6 @@
 # Project
 
 This project provides tools and resources to enable partners to offer a secure upload of encrypted SIM data.
-Tool generates json that matches the specified file format [Encrypted SIM File Design](https://microsoft.sharepoint.com/:w:/t/AzurePrivateMobileService/EepjEktHL5JHjTJBpo11lCIBOS0ORFt-JSDV9KizcZkr_w?e=wLOW3Y)
 
 ## Contributing
 
