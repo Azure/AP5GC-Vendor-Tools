@@ -38,29 +38,11 @@ def SecretToString(secret):
 class SimDefinitionFactory:
 
     class DefinitionSource(Enum):
-        STRING = 1
-        JSON = 2
-        FILE = 3
-        BULKFILE = 4
+        BULKFILE = 1
 
     def __call__(self, source, definition):
 
-        if (SimDefinitionFactory.DefinitionSource.STRING == source):
-            sim = SimDefinition()
-            sim.fromJson(definition)
-            return sim
-
-        elif (SimDefinitionFactory.DefinitionSource.JSON == source):
-            sim = SimDefinition()
-            sim.fromText(definition)
-            return sim
-
-        elif (SimDefinitionFactory.DefinitionSource.FILE == source):
-            sim = SimDefinition()
-            sim.fromFile(definition)
-            return sim
-
-        elif (SimDefinitionFactory.DefinitionSource.BULKFILE == source):
+        if (SimDefinitionFactory.DefinitionSource.BULKFILE == source):
             sims = []
             with open(definition) as bulkfile:
                 jsonSims = json.load(bulkfile)
