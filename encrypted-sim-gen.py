@@ -19,7 +19,7 @@ from enum import Enum
 
 argParser = argparse.ArgumentParser(description='Convert AP5GC SIM json data to encrypted SIM file format')
 argParser.add_argument("-A", "--azure", default='AP5GC-Public-Key-2.pem', help="Azure public key file")
-argParser.add_argument("-P", "--private", default='AP5GC-Private-Vendor-Test.pem', help="Private key file")
+argParser.add_argument("-P", "--private", required=True, help="Private key file")
 argParser.add_argument("-s", "--sims", default='SimBulkUpload.json', help="SIM credential data (json)")
 argParser.add_argument("-d", "--decrypted", default='Output-SimBulkUpload.json', help="Decrypted SIM output file")
 argParser.add_argument("-e", "--encrypted", default='Output-SimEncryptedBulkUpload.json', help="Encrypted SIM output file")
